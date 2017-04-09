@@ -56,7 +56,7 @@
     "start": "npm run watch",
     "lint:js": "eslint --max-warnings 16 ./client",
     "lint:scss": "stylelint '**/*.scss' --syntax scss",
-    "lint": "npm run lint:js",
+    "lint": "npm run lint:js | npm run lint:scss",
     "test": "npm run test:unit",
     "test:unit": "env NODE_PATH=$NODE_PATH:$PWD/client/src mocha --compilers js:babel-core/register client/tests/**/*.test.js",
     "test:unit:coverage": "env NODE_PATH=$NODE_PATH:$PWD/client/src babel-node $(npm bin)/isparta cover node_modules/mocha/bin/_mocha -- client/tests/**/*.test.js",
