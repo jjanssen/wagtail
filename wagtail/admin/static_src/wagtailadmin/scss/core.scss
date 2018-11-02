@@ -312,7 +312,6 @@ footer {
 // of pain when dealing with overlays that are appended to the end of
 // <body>, eg Hallo & calendars. As long as content-wrapper remains floated,
 // the z-index shouldn't be required.
-
 .nav-submenu {
     z-index: 6;
 }
