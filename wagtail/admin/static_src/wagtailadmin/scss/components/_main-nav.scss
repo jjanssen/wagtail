@@ -174,7 +174,7 @@
     box-sizing: border-box;
 
     label {
-        @include visuallyhidden();
+        @include visuallyhidden;
     }
 
     input,

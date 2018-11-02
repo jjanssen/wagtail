@@ -17,11 +17,11 @@ section {
 }
 
 .palette {
-    @include clearfix();
+    @include clearfix;
 
     ul {
-        @include clearfix();
-        @include unlist();
+        @include clearfix;
+        @include unlist;
     }
 
     li {

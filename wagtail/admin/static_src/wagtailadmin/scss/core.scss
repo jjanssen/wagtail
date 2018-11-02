@@ -80,7 +80,7 @@ body {
 }
 
 .wrapper {
-    @include clearfix();
+    @include clearfix;
     height: 100vh;
     transition: transform 0.2s ease;
 }
@@ -96,7 +96,7 @@ body {
 }
 
 .content {
-    @include row();
+    @include row;
     background: $color-white;
     border-top: 0 solid $color-grey-5; // this top border provides space for the floating logo to toggle the menu
     min-height: 100%;
@@ -117,7 +117,7 @@ body {
 
 footer {
     @include transition(bottom 0.5s ease 1s);
-    @include row();
+    @include row;
     border-radius: 3px 3px 0 0;
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
     background: $color-grey-1;
@@ -129,7 +129,7 @@ footer {
     color: $color-white;
 
     ul {
-        @include unlist();
+        @include unlist;
     }
 
     li {
@@ -193,8 +193,8 @@ footer {
 }
 
 .breadcrumb {
-    @include unlist();
-    @include clearfix();
+    @include unlist;
+    @include clearfix;
     overflow: hidden;
     padding-top: 1.4em;
     font-size: 0.85em;
@@ -286,11 +286,11 @@ footer {
 }
 
 .clearfix {
-    @include clearfix();
+    @include clearfix;
 }
 
 .row {
-    @include clearfix();
+    @include clearfix;
 }
 
 .nice-padding {
@@ -379,11 +379,11 @@ footer,
     }
 
     .row {
-        @include row();
+        @include row;
     }
 
     .row-flush {
-        @include row-flush();
+        @include row-flush;
     }
 
     .nice-padding {

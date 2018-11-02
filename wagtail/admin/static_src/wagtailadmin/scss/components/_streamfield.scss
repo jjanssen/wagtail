@@ -255,7 +255,7 @@ li.sequence-member {
         outline: none;
 
         span {
-            @include visuallyhidden();
+            @include visuallyhidden;
         }
 
         &::before {

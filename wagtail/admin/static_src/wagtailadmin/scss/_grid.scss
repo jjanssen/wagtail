@@ -3,7 +3,7 @@ $padding: $grid-gutter-width * 0.5;
 
 // Our row container
 @mixin row($padding: 0) {
-    @include clearfix();
+    @include clearfix;
     box-sizing: border-box;
     display: block;
     margin-right: auto;

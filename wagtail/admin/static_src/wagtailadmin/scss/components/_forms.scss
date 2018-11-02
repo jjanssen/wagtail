@@ -21,7 +21,7 @@ fieldset {
 }
 
 legend {
-    @include visuallyhidden();
+    @include visuallyhidden;
 }
 
 label,
@@ -665,7 +665,7 @@ button {
     overflow: hidden;
 
     > li {
-        @include row();
+        @include row;
         border-radius: 2px;
         position: relative;
         overflow: hidden;
@@ -873,13 +873,13 @@ li.focused > .help {
 
 .fields > li,
 .field-col {
-    @include clearfix();
+    @include clearfix;
     padding-top: 0.5em;
     padding-bottom: 1.2em;
 }
 
 .field-row {
-    @include clearfix();
+    @include clearfix;
 
     // negative margin the bottom so it doesn't add too much space
     margin-bottom: -1.2em;
@@ -946,7 +946,7 @@ li.inline:first-child {
 // re-instated and then overriden here? hmm.
 .chooser {
     // We show the 'chosen' state...
-    @include clearfix();
+    @include clearfix;
 
     input[type=text] {
         float: left;
@@ -1190,7 +1190,7 @@ select {
     }
 
     .field {
-        @include row();
+        @include row;
     }
 
     .field-content {

@@ -86,6 +86,7 @@ rules:
   scss/at-import-partial-extension-blacklist:
     - scss
   scss/at-else-empty-line-before: never
+  scss/at-mixin-argumentless-call-parentheses: never
   scss/at-rule-no-unknown: true
   scss/media-feature-value-dollar-variable: always
   scss/selector-no-redundant-nesting-selector: true

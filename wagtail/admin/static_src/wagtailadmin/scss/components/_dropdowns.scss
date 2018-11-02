@@ -1,5 +1,5 @@
 .dropdown {
-    @include clearfix();
+    @include clearfix;
     position: relative;
 
     input[type=submit],
@@ -26,7 +26,7 @@
 
     ul {
         @include transition(opacity 0.2s linear);
-        @include unlist();
+        @include unlist;
         background-color: $color-teal;
         position: absolute;
         overflow: hidden;

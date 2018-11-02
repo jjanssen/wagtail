@@ -56,7 +56,7 @@ $positions: (
 
 //  TODO: refactor into a mixin
 .#{$namespace}-icon::before {
-    @include icon();
+    @include icon;
 }
 
 
