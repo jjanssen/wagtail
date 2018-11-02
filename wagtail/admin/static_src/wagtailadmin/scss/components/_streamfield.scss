@@ -39,7 +39,7 @@ li.sequence-member {
     }
 
     // Copied from page-editor.scss
-    .struct-block li.required > label:after {
+    .struct-block li.required > label::after {
         content: '*';
         color: $color-red;
         font-weight: bold;
@@ -119,7 +119,7 @@ li.sequence-member {
         }
 
         .unchosen {
-            &:before {
+            &::before {
                 float: none;
                 font-size: 4em;
                 margin: 0;
@@ -196,7 +196,7 @@ li.sequence-member {
         width: 1.8rem;
         height: 1.8rem;
 
-        &:before {
+        &::before {
             line-height: 1.3em;
             font-size: 0.9rem;
         }
@@ -258,7 +258,7 @@ li.sequence-member {
             @include visuallyhidden();
         }
 
-        &:before {
+        &::before {
             transform: rotate(-45deg);
             position: absolute;
             font-family: wagtail;
@@ -318,7 +318,7 @@ li.sequence-member {
             box-sizing: border-box;
         }
 
-        &:before {
+        &::before {
             display: block;
             font-family: wagtail;
             font-size: 2em;
@@ -347,7 +347,7 @@ li.sequence-member {
             color: $color-grey-3;
             background-color: $color-white;
 
-            &:before {
+            &::before {
                 transform: rotate(0deg);
             }
 

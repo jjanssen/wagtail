@@ -117,8 +117,8 @@ $object-title-height: 40px;
             font-size: inherit;
         }
 
-        &:before,
-        label:before {
+        &::before,
+        label::before {
             @include font-smoothing;
             text-shadow: none;
             font-family: wagtail;
@@ -152,7 +152,7 @@ $object-title-height: 40px;
     }
 
     &.required {
-        > h2 label:after {
+        > h2 label::after {
             content: '*';
             color: $color-red;
             font-weight: bold;
@@ -202,7 +202,7 @@ $object-title-height: 40px;
         padding-left: 0;
         padding-right: 0;
 
-        &.required .field > label:after {
+        &.required .field > label::after {
             display: none;
         }
 
@@ -220,7 +220,7 @@ $object-title-height: 40px;
 
     // special panel for the publishing fields, requires a bit more pizzazz
     &.publishing {
-        > h2:before {
+        > h2::before {
             content: '7';
             font-size: 1.8rem;
             line-height: 1.4em;
@@ -278,7 +278,7 @@ $object-title-height: 40px;
                 width: 2em;
 
                 // stylelint-disable max-nesting-depth
-                &:before {
+                &::before {
                     position: relative;
                     padding: 0;
                     line-height: 1.8em; // specific height required as parent 'a' has no height
@@ -287,7 +287,7 @@ $object-title-height: 40px;
                     background-color: $color-salmon;
                 }
 
-                &:hover:before {
+                &:hover::before {
                     background-color: darken($color-salmon, 5%);
                 }
             }
@@ -304,8 +304,8 @@ $object-title-height: 40px;
         min-height: 41px;
 
         > h2 {
-            &:before,
-            > label:before {
+            &::before,
+            > label::before {
                 content: '6';
                 cursor: pointer;
             }
@@ -313,8 +313,8 @@ $object-title-height: 40px;
 
         &.collapsed {
             > h2 {
-                &:before,
-                > label:before {
+                &::before,
+                > label::before {
                     content: '5';
                 }
             }
@@ -410,13 +410,13 @@ footer .preview {
             &_small-part {
                 // IE11 requires units on the flex basis. Unitless breaks.
                 // stylelint-disable-next-line length-zero-no-unit
-                flex: 1 0 0px;
+                flex: 1 0 0;
             }
 
             &_big-part {
                 // IE11 requires units on the flex basis. Unitless breaks.
                 // stylelint-disable-next-line length-zero-no-unit
-                flex: 5 0 0px;
+                flex: 5 0 0;
             }
         }
 

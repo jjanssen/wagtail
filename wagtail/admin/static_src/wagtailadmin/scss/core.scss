@@ -41,7 +41,7 @@ body {
         overflow: visible;
     }
 
-    &:after {
+    &::after {
         content: '';
         position: fixed;
         transition: visibility 0s linear 0s, opacity 0.2s ease-out;
@@ -221,7 +221,7 @@ footer {
             line-height: 1.6em;
             padding-right: 1em;
 
-            &:after {
+            &::after {
                 right: 0;
                 // z-index: 5;
                 position: absolute;
@@ -242,7 +242,7 @@ footer {
             }
         }
 
-        &:hover:after {
+        &:hover::after {
             border-left-color: $color-teal-dark;
         }
 
@@ -255,13 +255,13 @@ footer {
                 font-size: 1em;
                 text-overflow: clip;
 
-                &:before {
+                &::before {
                     font-size: 1.15rem;
                     line-height: 0.85em;
                     padding-top: 0.1em;
                 }
 
-                &:after {
+                &::after {
                     right: -0.3em;
                 }
             }
@@ -269,7 +269,7 @@ footer {
     }
 
     header &  li {
-        &:before {
+        &::before {
             border-left: 1em solid $color-white;
             position: absolute;
             left: 0;
@@ -425,7 +425,7 @@ footer,
         li {
             a,
             span {
-                &:after {
+                &::after {
                     color: $color-teal;
                 }
             }

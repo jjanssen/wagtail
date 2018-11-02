@@ -40,7 +40,7 @@ $c-indicator-margin: 0.25rem;
     background: $color-state-draft;
     position: relative;
 
-    &:before {
+    &::before {
         content: '';
         width: $c-indicator-size / 2;
         height: $c-indicator-size;

@@ -18,7 +18,7 @@ header {
     h1 {
         padding: 0.2em 0;
 
-        &.icon:before {
+        &.icon::before {
             width: 1em;
             display: none;
             margin-right: 0.4em;
@@ -134,7 +134,7 @@ header {
             }
         }
 
-        h1.icon:before {
+        h1.icon::before {
             display: inline-block;
         }
 

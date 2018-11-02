@@ -121,7 +121,7 @@ dd {
     padding-left: 3.5em;
     position: relative;
 
-    &:before {
+    &::before {
         font-family: wagtail;
         position: absolute;
         left: 1em;
@@ -134,7 +134,7 @@ dd {
 .help-info {
     background-color: lighten($color-blue, 30%);
 
-    &:before {
+    &::before {
         color: $color-blue;
     }
 }
@@ -142,7 +142,7 @@ dd {
 .help-warning {
     background-color: lighten($color-orange, 30%);
 
-    &:before {
+    &::before {
         color: $color-orange;
         content: '!';
     }
@@ -151,7 +151,7 @@ dd {
 .help-critical {
     background-color: lighten($color-red, 40%);
 
-    &:before {
+    &::before {
         color: $color-red;
         content: '!';
     }

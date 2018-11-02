@@ -61,8 +61,8 @@
                 padding-right: 5em;
 
                 // stylelint-disable-next-line max-nesting-depth
-                &:before,
-                &:after {
+                &::before,
+                &::after {
                     right: 1em;
                 }
             }
@@ -136,12 +136,12 @@
         padding: 0 0.5em;
         text-align: center;
 
-        &:before,
-        &:after {
+        &::before,
+        &::after {
             margin: 0;
         }
 
-        &:before {
+        &::before {
             width: 1em;
             font-size: 1.2rem;
         }
@@ -298,14 +298,14 @@
 // =============================================================================
 //  Arrows
 // =============================================================================
-.u-arrow:before {
+.u-arrow::before {
     content: '';
     border: solid 0.35rem transparent;
     display: block;
     position: absolute;
 }
 
-.u-arrow--tl:before {
+.u-arrow--tl::before {
     bottom: 100%;
     left: 1rem;
 }
@@ -366,7 +366,7 @@
     background: #333;
 }
 
-.t-dark .u-arrow:before {
+.t-dark .u-arrow::before {
     border-bottom-color: #333;
 }
 
@@ -396,7 +396,7 @@
     border-color: #ccc;
 }
 
-.t-light .u-arrow:before {
+.t-light .u-arrow::before {
     border-bottom-color: #fff;
 }
 

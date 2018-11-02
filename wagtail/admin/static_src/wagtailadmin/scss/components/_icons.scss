@@ -8,24 +8,24 @@
     color: #fff;
 }
 
-.icon:before,
-.icon:after,
+.icon::before,
+.icon::after,
 .hallotoolbar [class^='icon-'],
-.hallotoolbar [class*=' icon-']:before,
-.hallotoolbar [class^='icon-']:before {
+.hallotoolbar [class*=' icon-']::before,
+.hallotoolbar [class^='icon-']::before {
     @include icon(); // from _mixins.scss
 }
 
-.icon:after,
-.hallotoolbar [class^='icon-']:after,
-.hallotoolbar [class^='icon-']:after {
+.icon::after,
+.hallotoolbar [class^='icon-']::after,
+.hallotoolbar [class^='icon-']::after {
     text-align: right;
 }
 
 .hallotoolbar [class^='icon-'],
-.hallotoolbar [class*=' icon-']:before,
-.hallotoolbar [class*=' icon-']:before,
-.hallotoolbar [class^='icon-']:before {
+.hallotoolbar [class*=' icon-']::before,
+.hallotoolbar [class*=' icon-']::before,
+.hallotoolbar [class^='icon-']::before {
     vertical-align: -10%;
     margin-right: 0;
 }
@@ -36,13 +36,13 @@
 // =============================================================================
 
 @each $icon, $content in $icons {
-    .icon-#{$icon}:before {
+    .icon-#{$icon}::before {
         content: quote(#{$content});
     }
 }
 
 @each $icon, $content in $icons-after {
-    .icon-#{$icon}:after {
+    .icon-#{$icon}::after {
         content: quote(#{$content});
     }
 }
@@ -55,51 +55,51 @@
     // Credit: Icon made by Freepik from Flaticon.com
 }
 
-.icon-view:before,
-.icon-no-view:before {
+.icon-view::before,
+.icon-no-view::before {
     vertical-align: -3.5px;
     font-size: 1.1rem;
 }
 
-.icon-view:before {
+.icon-view::before {
     content: '4';
 }
 
-.icon-no-view:before {
+.icon-no-view::before {
     content: '^';
 }
 
-.icon-collapse-down:before {
+.icon-collapse-down::before {
     content: '5';
 }
 
-.icon-collapse-up:before {
+.icon-collapse-up::before {
     content: '6';
 }
 
-.icon-date:before {
+.icon-date::before {
     content: '7';
 }
 
-.icon-time:before {
+.icon-time::before {
     content: '8';
 }
 
 
-.icon-spinner:after,
-.icon-spinner:before {
+.icon-spinner::after,
+.icon-spinner::before {
     width: 1em;
     animation: spin 0.5s infinite linear;
     display: inline-block;
     // content: '1';
 }
 
-.icon-horizontalrule:before {
+.icon-horizontalrule::before {
     font-family: Open Sans, Arial, sans-serif;
 }
 
 
-.icon-larger:before {
+.icon-larger::before {
     font-size: 1.5em;
 }
 
@@ -108,7 +108,7 @@
     line-height: 0;
     overflow: hidden;
 
-    &:before {
+    &::before {
         margin-right: 0;
         font-size: 1rem;
         display: inline-block;
@@ -131,7 +131,7 @@
 
 
 
-.icon-spinner:after {
+.icon-spinner::after {
     display: inline-block;
     line-height: 1;
 }
@@ -141,7 +141,7 @@
 .icon-help-inverse {
     $size: 15px;
 
-    &:before {
+    &::before {
         content: '?';
         display: inline-block;
         width: $size;

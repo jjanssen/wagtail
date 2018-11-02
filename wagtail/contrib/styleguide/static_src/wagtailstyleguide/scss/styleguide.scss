@@ -175,8 +175,8 @@ section {
 }
 
 .icons {
-    :before,
-    :after {
+    ::before,
+    ::after {
         font-size: 2em;
     }
 
@@ -192,7 +192,7 @@ section {
         position: relative;
     }
 
-    // .spinner .icon-spinner:after {
+    // .spinner .icon-spinner::after {
     //     position: absolute;
     // }
 }

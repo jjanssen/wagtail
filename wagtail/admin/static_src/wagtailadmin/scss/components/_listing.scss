@@ -60,7 +60,7 @@ ul.listing {
             color: inherit;
             position: relative;
 
-            &.icon:after {
+            &.icon::after {
                 opacity: 0.5;
                 right: 0;
             }
@@ -265,7 +265,7 @@ ul.listing {
         color: $color-teal;
         display: block;
 
-        &:before {
+        &::before {
             font-size: 3rem;
         }
     }
@@ -274,7 +274,7 @@ ul.listing {
         color: $color-grey-3;
         display: block;
 
-        &:before {
+        &::before {
             font-size: 1.5rem;
         }
 
@@ -283,7 +283,7 @@ ul.listing {
         }
     }
 
-    &.small .children a:before {
+    &.small .children a::before {
         font-size: 30px;
     }
 
@@ -292,12 +292,12 @@ ul.listing {
         padding-left: 25px;
     }
 
-    th.ord a:before {
+    th.ord a::before {
         width: 1em;
         font-size: 15px;
     }
 
-    th.ord a:hover:before {
+    th.ord a:hover::before {
         color: $color-teal;
     }
 
@@ -305,13 +305,13 @@ ul.listing {
         cursor: move;
         width: 20px;
 
-        &:before {
+        &::before {
             font-size: 20px;
             color: $color-grey-3;
             width: 1em;
         }
 
-        &:hover:before {
+        &:hover::before {
             color: $color-text-base;
         }
     }
@@ -588,7 +588,7 @@ table.listing {
                     text-align: center;
                     height: 180px;
 
-                    &:before {
+                    &::before {
                         content: '';
                         display: inline-block;
                         height: 100%;
@@ -641,7 +641,7 @@ table.listing {
         tr:hover .children {
             background-color: $color-teal;
 
-            a:before {
+            a::before {
                 color: $color-white;
             }
         }
@@ -703,7 +703,7 @@ table.listing {
         color: $color-teal;
 
         &.ascending {
-            &:before {
+            &::before {
                 content: '\25B2'; // up arrow
                 display: inline-block;
                 height: 100%;
@@ -712,7 +712,7 @@ table.listing {
         }
 
         &.descending {
-            &:before {
+            &::before {
                 content: '\25BC'; // down arrow
                 display: inline-block;
                 height: 100%;

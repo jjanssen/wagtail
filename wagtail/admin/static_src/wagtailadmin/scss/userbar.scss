@@ -55,7 +55,7 @@ $positions: (
 // =============================================================================
 
 //  TODO: refactor into a mixin
-.#{$namespace}-icon:before {
+.#{$namespace}-icon::before {
     @include icon();
 }
 
@@ -65,13 +65,13 @@ $positions: (
 // =============================================================================
 
 @each $icon, $content in $icons {
-    .#{$namespace}-icon-#{$icon}:before {
+    .#{$namespace}-icon-#{$icon}::before {
         content: quote(#{$content});
     }
 }
 
 @each $icon, $content in $icons-after {
-    .#{$namespace}-icon-#{$icon}:after {
+    .#{$namespace}-icon-#{$icon}::after {
         content: quote(#{$content});
     }
 }
@@ -137,7 +137,7 @@ $positions: (
         left: 0;
     }
 
-    &.#{$namespace}-icon:before {
+    &.#{$namespace}-icon::before {
         transition: color 0.2s ease;
         font-size: 32px;
         width: auto;
@@ -164,7 +164,7 @@ $positions: (
 }
 
 // Arrow
-.#{$namespace}-userbar-items:after {
+.#{$namespace}-userbar-items::after {
     content: '';
     position: absolute;
     width: 0;
@@ -243,7 +243,7 @@ $positions: (
     .#{$namespace}-icon {
         position: relative;
 
-        &:before {
+        &::before {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -295,7 +295,7 @@ $positions: (
             }
         }
 
-        .#{$namespace}-userbar-items:after {
+        .#{$namespace}-userbar-items::after {
             #{$vertical}: 2px;
             #{$horizontal}: $size-home-button / 2 - $width-arrow / 2;
             border-#{$arrow}-color: $color-grey-1;

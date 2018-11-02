@@ -1,6 +1,6 @@
 ignoreFiles:
   - node_modules
-  - build/**/*  
+  - build/**/*
 plugins:
   - stylelint-scss
 # See https://github.com/stylelint/stylelint/blob/master/docs/user-guide/rules.md
@@ -66,6 +66,7 @@ rules:
       - class
   selector-list-comma-newline-after: always
   selector-max-id: 0
+  selector-pseudo-element-colon-notation: double
   selector-pseudo-element-no-unknown: true
   selector-type-no-unknown: true
   scss/at-rule-no-unknown: true

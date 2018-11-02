@@ -62,7 +62,7 @@ a.button {
     height: 3.5em;
 }
 
-input[type=checkbox]:before {
+input[type=checkbox]::before {
     background-color: #333;
     color: #555;
     border: 1px solid #555;
@@ -102,7 +102,7 @@ input[type=checkbox]:before {
     padding: 0;
 }
 
-.iconfield .input:before {
+.iconfield .input::before {
     display: none;
 }
 
@@ -132,7 +132,7 @@ input[type=checkbox]:before {
     ul {
         margin: 0;
 
-        &:before {
+        &::before {
             display: none;
         }
 
@@ -157,7 +157,7 @@ input[type=checkbox]:before {
         height: 100%;
         padding: 0 $desktop-nice-padding;
 
-        &:before {
+        &::before {
             content: '';
             width: 0;
             display: inline-block;
@@ -175,7 +175,7 @@ input[type=checkbox]:before {
         margin: 0 (-$desktop-nice-padding);
 
         .iconfield {
-            .input:before {
+            .input::before {
                 display: inline-block;
                 position: absolute;
                 color: $color-grey-4;

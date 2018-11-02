@@ -50,7 +50,7 @@ header {
             margin-bottom: 2em;
         }
 
-        li:before {
+        li::before {
             opacity: 0.2;
             font-size: 6em;
             float: left;

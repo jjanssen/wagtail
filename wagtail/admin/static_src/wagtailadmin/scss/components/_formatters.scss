@@ -28,7 +28,7 @@
     &.square {
         border-radius: 0;
 
-        &:before {
+        &::before {
             border-radius: 0;
         }
     }
@@ -58,7 +58,7 @@
     display: block;
     position: relative;
 
-    &:before {
+    &::before {
         position: absolute;
         display: none;
         content: attr(title);
@@ -67,7 +67,7 @@
     &:hover {
         visibility: hidden;
 
-        &:before {
+        &::before {
             visibility: visible;
             display: block;
         }
@@ -125,7 +125,7 @@ button.status-tag:hover {
 .privacy-indicator {
     .label-private,
     .label-public {
-        &:before {
+        &::before {
             font-size: 1.5em;
         }
     }
@@ -153,7 +153,7 @@ button.status-tag:hover {
     line-height: 2em;
     white-space: nowrap;
 
-    &:before {
+    &::before {
         font-family: wagtail;
         display: inline-block;
         color: $color-white;
@@ -186,13 +186,13 @@ a.tag:hover {
     &.loading {
         position: relative;
 
-        &:before,
-        &:after {
+        &::before,
+        &::after {
             position: absolute;
             display: block;
         }
 
-        &:before {
+        &::before {
             content: '';
             top: -5px;
             left: -5px;
@@ -202,7 +202,7 @@ a.tag:hover {
             background-color: rgba(255, 255, 255, 0.5);
         }
 
-        &:after {
+        &::after {
             font-size: 30px;
             width: 30px;
             line-height: 30px;
