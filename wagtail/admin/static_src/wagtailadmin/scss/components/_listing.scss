@@ -1,6 +1,8 @@
 // General listings, like for pages, images or snippets
 ul.listing {
-    @include unlist();
+    @include unlist;
+    border-top: 1px dashed $color-input-border;
+    margin-bottom: 2em;
 }
 
 .listing {
@@ -64,6 +66,10 @@ ul.listing {
                 opacity: 0.5;
                 right: 0;
             }
+        }
+
+        .dropdown ul {
+            @include transition(none);
         }
     }
 
@@ -230,16 +236,12 @@ ul.listing {
 
     .button-secondary {
         border-color: $color-grey-3;
-        background: $color-white;
+        background-color: $color-white;
 
         &:hover {
             border-color: $color-teal;
             background-color: $color-teal;
         }
-    }
-
-    .button-secondary {
-        background-color: $color-white;
     }
 
     .moderate-actions form {
@@ -249,6 +251,7 @@ ul.listing {
 
     .children,
     .no-children {
+        @include transition(background-color 0.2s ease);
         padding: 0;
 
         &:hover {
@@ -256,6 +259,7 @@ ul.listing {
         }
 
         a {
+            @include transition(all 0.2s ease);
             display: block;
             padding: 2em 0;
         }
@@ -420,15 +424,6 @@ ul.listing {
     word-wrap: break-word;
 }
 
-ul.listing {
-    border-top: 1px dashed $color-input-border;
-    margin-bottom: 2em;
-}
-
-table.listing {
-    width: 100%;
-}
-
 // explorer specific tweaks
 .page-explorer .listing {
     position: relative;
@@ -509,9 +504,6 @@ table.listing {
 
     ul {
         @include unlist();
-    }
-
-    ul {
         margin-top: -1.7em;
     }
 
@@ -673,24 +665,6 @@ table.listing {
     }
 }
 
-
-// Transitions
-.listing {
-    thead .dropdown ul {
-        @include transition(none);
-    }
-
-    .children,
-    .no-children {
-        @include transition(background-color 0.2s ease);
-    }
-
-    .children a,
-    .no-children a {
-        @include transition(all 0.2s ease);
-    }
-}
-
 // Ordering
 td.ord {
     .handle {
@@ -699,6 +673,8 @@ td.ord {
 }
 
 table.listing {
+    width: 100%;
+
     th.ordered {
         color: $color-teal;
 

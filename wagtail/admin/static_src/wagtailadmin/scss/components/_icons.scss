@@ -17,13 +17,11 @@
 }
 
 .icon::after,
-.hallotoolbar [class^='icon-']::after,
 .hallotoolbar [class^='icon-']::after {
     text-align: right;
 }
 
 .hallotoolbar [class^='icon-'],
-.hallotoolbar [class*=' icon-']::before,
 .hallotoolbar [class*=' icon-']::before,
 .hallotoolbar [class^='icon-']::before {
     vertical-align: -10%;

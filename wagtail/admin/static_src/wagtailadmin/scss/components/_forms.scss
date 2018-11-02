@@ -230,9 +230,14 @@ input[type=checkbox]:checked::before {
     -moz-appearance: none;
 
     &:hover {
-        color: $color-teal;
-    }
+        background-color: $color-button-hover;
+        color: $color-white;
+        border-color: transparent;
 
+        &.hover-no {
+            background-color: $color-button-no;
+        }
+    }
 
     &.yes {
         background-color: $color-button-yes;
@@ -369,16 +374,6 @@ input[type=checkbox]:checked::before {
         -webkit-font-smoothing: auto;
         // stylelint-disable-next-line property-no-vendor-prefix
         -moz-appearance: none;
-    }
-
-    &:hover {
-        background-color: $color-button-hover;
-        color: $color-white;
-        border-color: transparent;
-
-        &.hover-no {
-            background-color: $color-button-no;
-        }
     }
 
     &.button-longrunning {
@@ -743,6 +738,7 @@ button {
 }
 
 .help {
+    @include transition(opacity 0.2s ease);
     color: $color-grey-2;
 }
 
@@ -1171,10 +1167,6 @@ input[type=button],
 .button,
 button {
     // @include transition(background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease);
-}
-
-.help {
-    @include transition(opacity 0.2s ease);
 }
 
 @media screen and (min-width: $breakpoint-mobile) {

@@ -25,6 +25,7 @@
     }
 
     ul {
+        @include transition(opacity 0.2s linear);
         @include unlist();
         background-color: $color-teal;
         position: absolute;
@@ -221,11 +222,6 @@
             background-color: $color-button-warning-hover;
         }
     }
-}
-
-// Transitions
-.dropdown ul {
-    @include transition(opacity 0.2s linear);
 }
 
 
