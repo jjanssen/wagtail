@@ -116,7 +116,6 @@ body {
 }
 
 footer {
-    // @include transition(all 0.2s ease);
     @include transition(bottom 0.5s ease 1s);
     @include row();
     border-radius: 3px 3px 0 0;
@@ -314,9 +313,6 @@ footer {
 // <body>, eg Hallo & calendars. As long as content-wrapper remains floated,
 // the z-index shouldn't be required.
 
-// .content-wrapper {
-// z-index: 3;
-// }
 .nav-submenu {
     z-index: 6;
 }
