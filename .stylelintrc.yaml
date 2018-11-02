@@ -65,10 +65,6 @@ rules:
     - except:
       - after-single-line-comment
       - first-nested
-  scss/at-import-no-partial-leading-underscore: true
-  scss/at-import-partial-extension-blacklist:
-    - scss
-  scss/at-else-empty-line-before: never
   selector-no-qualifying-type:
     - true
     - ignore:
@@ -80,11 +76,16 @@ rules:
   selector-pseudo-element-colon-notation: double
   selector-pseudo-element-no-unknown: true
   selector-type-no-unknown: true
-  scss/at-rule-no-unknown: true
-  scss/media-feature-value-dollar-variable: always
-  scss/selector-no-redundant-nesting-selector: true
   string-no-newline: true
   string-quotes: single
   unit-no-unknown: true
   unit-case: lower
   value-no-vendor-prefix: true
+  # SCSS Lint settings
+  scss/at-import-no-partial-leading-underscore: true
+  scss/at-import-partial-extension-blacklist:
+    - scss
+  scss/at-else-empty-line-before: never
+  scss/at-rule-no-unknown: true
+  scss/media-feature-value-dollar-variable: always
+  scss/selector-no-redundant-nesting-selector: true
