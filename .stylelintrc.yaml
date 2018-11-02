@@ -38,7 +38,7 @@ rules:
   function-url-quotes: always
   indentation:
     - 4
-    - severity: warning
+    - severity: error
   length-zero-no-unit: true
   max-nesting-depth: 3
   media-feature-name-no-unknown: true
